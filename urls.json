@@ -1,3 +1,11 @@
 {
-    "modifications": []
+    "modifications": [
+        {
+            "type": "insertAfterNode",
+            "path": "/models/flfactalma/articulosprov",
+            "value": {
+                "movistock": null
+            }
+        }
+    ]
 }

@@ -4,7 +4,15 @@
         {
             "key": "baseparche",
             "version": "v1.0"
+        },
+        {
+            "key": "flfacturac",
+            "version": "v1.0"
+        },
+        {
+            "key": "flsyncppal_tmp",
+            "version": "v1.0"
         }
     ],
-    "fun_aq": null
+    "fun_aq": "fun_nobuckalma"
 }

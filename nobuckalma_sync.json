@@ -5,6 +5,10 @@
             {
                 "name": "dependencias.json",
                 "path": "config/"
+            },
+            {
+                "name": "settings.py",
+                "path": "AQNEXT/"
             }
         ],
         "deleteFile": [],
@@ -18,7 +22,49 @@
                 "path": "config/"
             }
         ],
-        "addFile": [],
-        "patchScript": []
+        "addFile": [
+            {
+                "name": "ctrl_api_b2c_products__upload.py",
+                "path": "controllers/api/b2c/products/"
+            },
+            {
+                "name": "ctrl_api_b2c_products__na_products_upload.py",
+                "path": "controllers/api/b2c/products/controllers/"
+            },
+            {
+                "name": "app_sync__tasks.py",
+                "path": "apps/sync/"
+            },
+            {
+                "path": "controllers/api/b2c/orders/",
+                "name": "ctrl_api_b2c_orders__download.py"
+            },
+            {
+                "path": "controllers/api/b2c/orders/controllers/",
+                "name": "ctrl_api_b2c_orders__na_orders_download.py"
+            },
+            {
+                "path": "models/flfacturac/objects/",
+                "name": "model_flfacturac__order_line_raw.py"
+            },
+            {
+                "path": "models/flfacturac/objects/",
+                "name": "model_flfacturac__order_raw.py"
+            },
+            {
+                "path": "models/flfactalma/",
+                "name": "model_flfactalma__movistock.py"
+            },
+            {
+                "path": "models/flfactalma/",
+                "name": "model_flfactalma__movistock_def.py"
+            }
+        ],
+        "patchScript": [
+            {
+                "name": "model_flsyncppal__flsyncppal_def.py",
+                "path": "models/flsyncppal/"
+            }
+        ]
     }
 }
