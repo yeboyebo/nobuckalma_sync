@@ -5,16 +5,15 @@ from controllers.base.magento2.products.controllers.products_upload import Produ
 
 class NaProductsUpload(ProductsUpload):
 
-    product_url = "https://tintopro.com/index.php/rest/V1/products"
-    product_test_url = "https://tintopro.com/index.php/rest/V1/products"
-
-    link_url = "https://tintopro.com/index.php/rest/all/V1/configurable-products/child"
-    link_test_url = "https://tintopro.com/index.php/rest/all/V1/configurable-products/child"
-
     def __init__(self, params=None):
-        super().__init__("nab2cproducts", params)
+        super().__init__("nab2corders", params)
 
-        self.set_sync_params({
-            "auth": "Bearer 4gt9sndpj981jgv7v1bx5i0h1yo8wjq8",
-            "test_auth": "Bearer 4gt9sndpj981jgv7v1bx5i0h1yo8wjq8"
-        })
+        product_params = self.get_param_sincro('b2cProductsUpload')
+        self.product_url = product_params['url']
+        self.product_test_url = product_params['test_url']
+
+        link_params = self.get_param_sincro('b2cProductsUploadLink')
+        self.link_url = link_params['url']
+        self.link_test_url = link_params['test_url']
+
+        self.set_sync_params(self.get_param_sincro('b2c'))
